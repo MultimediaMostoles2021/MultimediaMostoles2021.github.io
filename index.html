@@ -44,9 +44,9 @@
     $(function(){
 	for (var i = 0; i < equipos; i++) {
 	    var l = infoEquipos[i][0];  // letra del equipo
-	    var url = infoEquipos[i][2]; // url del equipo
+	    var url = `https://equipo${l}mmm2021.github.io/index.html`; // url del equipo
 
-	    $(`#Equipo${l}`).load(`${l}.html`); // load equipo file
+	    $(`#Equipo${l}`).load(`${url}.html`); // load equipo file
 	}
     });
     
