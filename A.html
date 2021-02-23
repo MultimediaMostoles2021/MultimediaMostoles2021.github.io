@@ -1,33 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script type="text/javascript" src="./showdown.js"></script>
-    <title>
-      Markdown Viewer
-    </title>
-    <style type="text/css">
-      #markdown-contents {
-        width: 600px;
-        padding: 0 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="markdown-contents"></div>
-    <script type="text/javascript">
-      var directory = "./xdr-proxy";
-      var filename  = "README.markdown";
-      var path      = directory + "/" + filename;
-      var md2html = function (path) {
-        // Load contents and convert to HTML
-        $("#markdown-contents").load(path, function(text, status){
-          var sdconv     = new Showdown.converter();
-          this.innerHTML = sdconv.makeHtml(text);
-        });
-      }
-      md2html(path);
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+  </script>
+</body>
 </html>
