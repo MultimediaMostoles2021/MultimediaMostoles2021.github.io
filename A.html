@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <textarea id="text-input" oninput="this.editor.update()"
-              rows="6" cols="60">Type **Markdown** here.</textarea>
-    <div id="preview"> </div>
-    <script src="https://github.com/evilstreak/markdown-js/lib/markdown.js"></script>
-    <script>
-      function Editor(input, preview) {
-        this.update = function () {
-          preview.innerHTML = markdown.toHTML(input.value);
-        };
-        input.editor = this;
-        this.update();
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./showdown.js"></script>
+    <title>
+      Markdown Viewer
+    </title>
+    <style type="text/css">
+      #markdown-contents {
+        width: 600px;
+        padding: 0 10px;
       }
-      var $ = function (id) { return document.getElementById(id); };
-      new Editor($("text-input"), $("preview"));
+    </style>
+  </head>
+  <body>
+    <div id="markdown-contents"></div>
+    <script type="text/javascript">
+      var directory = "./xdr-proxy";
+      var filename  = "README.markdown";
+      var path      = directory + "/" + filename;
+      var md2html = function (path) {
+        // Load contents and convert to HTML
+        $("#markdown-contents").load(path, function(text, status){
+          var sdconv     = new Showdown.converter();
+          this.innerHTML = sdconv.makeHtml(text);
+        });
+      }
+      md2html(path);
     </script>
   </body>
 </html>
