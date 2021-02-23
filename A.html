@@ -8,16 +8,32 @@
   <div id="content"></div>
   <markdown>
     # Title 
-    *bold text*
+    This line has: **bold**, *italic* and normal text.
   
     ## Subtitle
     list of items
     - 1 item
     - second item
     
-    Line with `code` and ~~others~~
+    Line with `code` and ~~others~~.
+    
+    - [Introduction](#introduction)
+    - [Paragraphs](#paragraphs)
   
+    Link of an internal file [**B.html**][B.html].
+    Link to an external url [url][https://www.abc.es/].
+    
+    ## Table
+    
+    ```md
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| **col 3 is**  | right-aligned | $1600 |
+| col 2 is      | *centered*    |   $12 |
+| zebra stripes | ~~are neat~~  |    $1 |
+```
   </markdown>
+  
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     document.getElementById('content').innerHTML =
