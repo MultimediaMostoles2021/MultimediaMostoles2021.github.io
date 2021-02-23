@@ -6,7 +6,18 @@
 </head>
 <body>
   <div id="content"></div>
-  <markdown>#Title *bold*</markdown>
+  <markdown>
+    # Title 
+    *bold text*
+  
+    ## Subtitle
+    list of items
+    - 1 item
+    - second item
+    
+    Line with `code` and ~~others~~
+  
+  </markdown>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     document.getElementById('content').innerHTML =
