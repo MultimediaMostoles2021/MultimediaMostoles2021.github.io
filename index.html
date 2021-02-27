@@ -1,73 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-    		<title>Multimedia Móstoles 2020-21 by Joaquín Arias</title>
-   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    		<meta http-equiv="Pragma" content="no-cache" />
-    		<meta http-equiv="Expires" content="0" />
+  <head>
 
-		<script data-ad-client="ca-pub-5116371729149693" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-E2YCVKQH0L"></script>
-		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E2YCVKQH0L'); </script>
-		
-    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	</head> 
-<body> 
-	<center><h1> Multimedia (Móstoles) 2020-2021</h1></center>
-	
-	<p>Esta página web corresponde a la asignatura de Multimedia del Grado en Diseño y Desarrollo de Videojuegos de la Universidad Rey Juan Carlos.
-	</p>
-	<p>En esta página se irán mostrando los avances de cada grupo en el desarrollo de la práctica correspondiente al campus de Móstoles del año 2020-2021.
-	</p>
-	<p>El objetivo de la asignatura es:<p>
-	<ul>
-		<li>Conocer y gestionar los medios de difusión actuales de contenidos multimedia</li>
-		<li>Aprender los conceptos básicos de IPO y su aplicación</li>
-		<li>Estudiar la evaluación de contenidos multimedia</li>
-		<li>Comprender los fundamentos teóricos y técnicos de los formatos multimedia</li>
-		<li>Desarrollar contenidos multimedia utilizando herramientas profesionales</li>
-	</ul>
-	
-	<div class="container">
+    <title>Multimedia Móstoles 2020-21 by Joaquín Arias</title>
 
-		<div id="listaEquipos"></div>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script data-ad-client="ca-pub-5116371729149693" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2YCVKQH0L"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E2YCVKQH0L'); </script>
     
-	</div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-	<script>
-		var equipos = 12;
-		var listaEquipos = document.getElementById('listaEquipos');
-		var infoEquipos = [
-			['A', 'Puzzle', 'http://'],
-			['B', 'Dígitos', 'http://'],
-			['C', 'FUJAMA ', 'http://'],
-			['D', 'Equipo F', 'http://'],
-			['E', 'Los sin nombre', 'http://'],
-			['F', 'Equipo A', 'http://'],
-			['G', 'Otro 10', 'http://'],
-			['H', 'Equipo UWU', 'http://'],
-			['I', 'Beta Testers', 'http://'],
-			['J', 'Flamingos', 'http://'],
-			['K', '-', 'http://'],
-			['L', 'Escoba', 'http://']
-    		];
+  </head> 
+  <body> 
+    <center><h1> Multimedia (Móstoles) 2020-2021</h1></center>
+    
+    <p>Esta página web corresponde a la asignatura de Multimedia del Grado en Diseño y Desarrollo de Videojuegos de la Universidad Rey Juan Carlos.
+    </p>
+    <p>En esta página se irán mostrando los avances de cada grupo en el desarrollo de la práctica correspondiente al campus de Móstoles del año 2020-2021.
+    </p>
+    <p>El objetivo de la asignatura es:<p>
+      <ul>
+	<li>Conocer y gestionar los medios de difusión actuales de contenidos multimedia</li>
+	<li>Aprender los conceptos básicos de IPO y su aplicación</li>
+	<li>Estudiar la evaluación de contenidos multimedia</li>
+	<li>Comprender los fundamentos teóricos y técnicos de los formatos multimedia</li>
+	<li>Desarrollar contenidos multimedia utilizando herramientas profesionales</li>
+      </ul>
+      
+      <div class="container">
 
-		$(function(){
-			for (var i = 0; i < equipos; i++) {
-				var l = infoEquipos[i][0];  // letra del equipo
-				var url = `https://equipo${l}mmm2021.github.io/index.html`; // url del equipo
-				$(`#Equipo${l}`).load(`${url}`); // load equipo file
-			}
-		});
-		function block(index) {
-			var l = infoEquipos[index][0]; // letra del equipo
-			var name = infoEquipos[index][1]; // nombre del equipo
-	return `
+	<div id="listaEquipos"></div>
+
+	<style>
+	body{
+	    font-family: 'Raleway', sans-serif;
+	    text-shadow: none;
+	}
+        H1 { font-size: 16px; color: black;}
+	</style>
+	
+      </div>
+
+      <script>
+	var equipos = 12;
+	var listaEquipos = document.getElementById('listaEquipos');
+	var infoEquipos = [
+	    ['A', 'Puzzle', 'http://'],
+	    ['B', 'Dígitos', 'http://'],
+	    ['C', 'FUJAMA ', 'http://'],
+	    ['D', 'Equipo F', 'http://'],
+	    ['E', 'Los sin nombre', 'http://'],
+	    ['F', 'Equipo A', 'http://'],
+	    ['G', 'Otro 10', 'http://'],
+	    ['H', 'Equipo UWU', 'http://'],
+	    ['I', 'Beta Testers', 'http://'],
+	    ['J', 'Flamingos', 'http://'],
+	    ['K', '-', 'http://'],
+	    ['L', 'Escoba', 'http://']
+    	];
+
+	$(function(){
+	    for (var i = 0; i < equipos; i++) {
+		var l = infoEquipos[i][0];  // letra del equipo
+		var url = `https://equipo${l}mmm2021.github.io/index.html`; // url del equipo
+		$(`#Equipo${l}`).load(`${url}`); // load equipo file
+	    }
+	});
+	function block(index) {
+	    var l = infoEquipos[index][0]; // letra del equipo
+	    var name = infoEquipos[index][1]; // nombre del equipo
+	    return `
 
 <table>
 <tr><td width=120px>
@@ -80,10 +92,10 @@
 
         `;
 
-    }
-		for (var i = 0; i < equipos; i++) {
-			listaEquipos.innerHTML += '<p>' + block(i) + '</p>';
-		}
+	}
+	for (var i = 0; i < equipos; i++) {
+	    listaEquipos.innerHTML += '<p>' + block(i) + '</p>';
+	}
 	</script>
-</body>
+  </body>
 </html>
