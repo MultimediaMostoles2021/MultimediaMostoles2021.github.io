@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Multimedia Móstoles 2020-21 by Joaquín Arias</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- From https://www.w3schools.com/w3css/tryw3css_templates_portfolio2.htm# -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script data-ad-client="ca-pub-5116371729149693" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2YCVKQH0L"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E2YCVKQH0L'); </script>
+    <!-- <script async src="js/listaequipos.js"></script> -->
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/flip.css">
+
+    <style>
+      body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+      .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+      .w3-third img:hover{opacity: 1}
+    </style>
+
+    <body class="w3-light-grey w3-content" style="max-width:1600px">
+
+      <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topright w3-hide-large">X</a>
+      <h3 class="w3-padding-64 w3-center"><b>MULTIMEDIA<br>Móstoles<br>2020-2021</b></h3>
+      <a href="#listaEquipos" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPOS</a> 
+      <a href="#videojuegos" onclick="w3_close()" class="w3-bar-item w3-button">VIDEOJUEGOS</a> 
+      <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE MULTIMEDIA</a> 
+      <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+      <vspace>
+      <a href="https://github.com/multimediamostoles2021/multimediamostoles2021.github.io/" target="_blank"><i class="fab fa-github fa-2x"></i></a>      
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+      <span class="w3-left w3-padding">MULTIMEDIA 20-21</span>
+      <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+      <!-- Push down content on small screens --> 
+      <div class="w3-hide-large" style="margin-top:83px"></div>
+      
+      <!-- Photo grid with the letters of the teams -->
+      <div class="w3-dark-grey" id="listaEquipos"> </div>
+
+      <style>
+	body{
+	    font-family: 'Raleway', sans-serif;
+	    text-shadow: none;
+        }
+      </style>
+
+      
+      <!-- Division -->
+
+      <!-- About section -->
+      <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="sobre">
+	<br><br>
+	<h2><b>Sobre Multimedia</b></h2>
+	<img src="urjc.jpg" alt="MMM" class="w3-image w3-padding-32" width="600">
+	<div class="w3-content w3-justify" style="max-width:600px">
+	  <h4>Móstoles 2020-2021</h4>
+	  <p>Esta página web corresponde a la asignatura de Multimedia del Grado en Diseño y Desarrollo de Videojuegos de la Universidad Rey Juan Carlos.
+	  </p>
+	  <p>En esta página se irán mostrando los avances de cada grupo en el desarrollo de la práctica correspondiente al campus de Móstoles del año 2020-2021.
+	  </p>
+	  <p>El objetivo de la asignatura es:<p>
+	    <ul>
+	      <li>Conocer y gestionar los medios de difusión actuales de contenidos multimedia</li>
+	      <li>Aprender los conceptos básicos de IPO y su aplicación</li>
+	      <li>Estudiar la evaluación de contenidos multimedia</li>
+	      <li>Comprender los fundamentos teóricos y técnicos de los formatos multimedia</li>
+	      <li>Desarrollar contenidos multimedia utilizando herramientas profesionales</li>
+	    </ul>
+	</div>
+      </div>
+  
+      <div id="contacto" class="w3-black w3-center w3-padding-24">
+	Copyright @ 2020-2021 |
+	<a href="mailto:multimediamostoles2021@gmail.com"> Webmaster </a>
+	| Powered by
+	<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	  document.getElementById("myOverlay").style.display = "none";
+      }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+      var equipos = 12;
+      var listaEquipos = document.getElementById('listaEquipos');
+      var infoEquipos = [
+	  ['A', 'Puzzle', 'http://'],
+	  ['B', 'Dígitos', 'http://'],
+	  ['C', 'FUJAMA ', 'http://'],
+	  ['D', 'Equipo F', 'http://'],
+	  ['E', 'Los sin nombre', 'http://'],
+	  ['F', 'Equipo A', 'http://'],
+	  ['G', 'Otro 10', 'http://'],
+	  ['H', 'Equipo UWU', 'http://'],
+	  ['I', 'Beta Testers', 'http://'],
+	  ['J', 'Flamingos', 'http://'],
+	  ['K', '-', 'http://'],
+	  ['L', 'Escoba', 'http://']
+      ];
+     
+      function markd() {
+	  var md_tags = document.getElementsByName("markdown"); // Returns array of all markdown.
+
+	  for (var i = 0; i < md_tags.length; i++) { 
+	      var md_text = md_tags[i].innerHTML.replace(/^[^\S\n]+/mg, "");
+	      md_tags[i].innerHTML = marked(md_text);
+	  }
+      }
+      
+      function block(i) {
+	  var l = infoEquipos[i][0]; // letra del equipo
+	  var name = infoEquipos[i][1]; // nombre del equipo
+	  var color = 'hsla(' + (Math.random()*255) + ', 50%, 50%, 1)';
+	  var github = "https://github.com/Equipo" + l + "mmm2021/Equipo" + l + "mmm2021.github.io/";
+	  var url = "https://equipo" + l + "mmm2021.github.io/index.html";
+
+	  return `
+   <div class="flip-card">
+      <div class="flip-card-inner">
+	<div class="flip-card-front">
+	  <img src="letters/${l}.png" style="width:100%;">
+	</div>
+	<div class="flip-card-back" style="background-color:${color}">
+          <a href="#" onclick="document.getElementById('id${l}').style.display='block'"> 
+	    <h4> <b><div id="Nombre${l}">${name}</div></b> </h4>
+	  </a>
+	   <div id="Lema${l}">¡Hola mundo somos el equipo ${l}!</div>
+          <div class="w3-display-bottommiddle">
+	    <p>
+              <a href=${github} target="_blank"><i class="fab fa-github fa-2x"></i></a>
+		<a href=${url} target="_blank"><i class="far fa-share-square fa-2x"></i></a>
+	    </p>
+          </div>
+	</div>
+      </div>
+    </div>
+
+    <div id="id${l}" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color:${color}; width:60%; padding:1%;">
+        <span onclick="document.getElementById('id${l}').style.display='none'" class="w3-button w3-display-topright">X</span>
+        <div id="Readme${l}" name="markdown"> 
+	  <h3>Pendiente README.md del equipo ${l} (${name})</h3>
+	</div>
+      </div>
+    </div>
+        `;
+
+      }
+
+      function crearListaEquipos() {
+	  for (var i = 0; i < 3; i++) {
+	      for (var j = 0; j < 4; j++) {
+		  listaEquipos.innerHTML += '<div class="w3-col s6 m4 l3">' + block(4*i+j) + '</div>';
+	      }
+	  }
+      }
+
+      function inicia() {
+
+	  crearListaEquipos();
+
+	  for (var i = 0; i < equipos; i++) {
+	      var l = infoEquipos[i][0];  // letra del equipo
+	      var nombre = `https://equipo${l}mmm2021.github.io/nombre.txt`;
+	      var lema = `https://equipo${l}mmm2021.github.io/lema.txt`;
+	      var readme = `https://equipo${l}mmm2021.github.io/README.md`; 
+	      $(`#Nombre${l}`).load(nombre);
+	      $(`#Lema${l}`).load(lema);
+	      $(`#Readme${l}`).load(readme,markd);
+	  }
+      }
+
+      $(function(){
+	  inicia();
+      });
+
+    </script>
+
+    
+    </body>
+</html>
