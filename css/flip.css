@@ -48,9 +48,6 @@
   transform: rotateY(180deg);
 }
 
-H1 {
-    font-size: 18px;
-}
 tab {
     display: inline-block;
     margin-left: 40px;
