@@ -39,7 +39,7 @@
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topright w3-hide-large">X</a>
       <h3 class="w3-padding-64 w3-center"><b>MULTIMEDIA<br>Móstoles<br>2020-2021</b></h3>
       <a href="#listaEquipos" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPOS</a> 
-      <a href="#videojuegos" onclick="w3_close()" class="w3-bar-item w3-button">VIDEOJUEGOS</a> 
+      <!-- <a href="#videojuegos" onclick="w3_close()" class="w3-bar-item w3-button">VIDEOJUEGOS</a>  -->
       <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE MULTIMEDIA</a> 
       <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
       <vspace>
@@ -75,11 +75,11 @@
       <!-- Division -->
 
       <!-- About section -->
-      <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="sobre">
+      <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32">
 	<br><br>
 	<h2><b>Sobre Multimedia</b></h2>
 	<img src="urjc.jpg" alt="MMM" class="w3-image w3-padding-32" width="600">
-	<div class="w3-content w3-justify" style="max-width:600px">
+	<div  id="sobre" class="w3-content w3-justify" style="max-width:600px">
 	  <h4>Móstoles 2020-2021</h4>
 	  <p>Esta página web corresponde a la asignatura de Multimedia del Grado en Diseño y Desarrollo de Videojuegos de la Universidad Rey Juan Carlos.
 	  </p>
@@ -136,8 +136,7 @@
 	  ['H', 'Equipo UWU', 'http://'],
 	  ['I', 'Beta Testers', 'http://'],
 	  ['J', 'Flamingos', 'http://'],
-	  ['K', '-', 'http://'],
-	  ['L', 'Escoba', 'http://']
+	  ['K', 'PinkOtter', 'http://']
       ];
      
       function markd() {
@@ -163,10 +162,10 @@
 	  <img src="letters/${l}.png" style="width:100%;">
 	</div>
 	<div class="flip-card-back" style="background-color:${color}">
-          <a href="#" onclick="document.getElementById('id${l}').style.display='block'"> 
 	    <h4> <b><div id="Nombre${l}">${name}</div></b> </h4>
-	  </a>
-	   <div id="Lema${l}">¡Hola mundo somos el equipo ${l}!</div>
+	  <div class="w3-display-middle">
+             <a href=videos/Equipo${l}.mp4 target="_blank"><i class="fa fa-play-circle fa-4x"></i></a>
+          </div>
           <div class="w3-display-bottommiddle">
 	    <p>
               <a href=${github} target="_blank"><i class="fab fa-github fa-2x"></i></a>
